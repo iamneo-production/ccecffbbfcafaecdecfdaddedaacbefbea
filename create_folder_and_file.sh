@@ -7,4 +7,8 @@ else
     echo "Directory '$directory_name' created successfully."
 fi
 if [ -f "/home/coder/$directory_name/$file_name" ]; then 
-    echo "File already"
+    echo "File already exists."
+else
+    touch "/home/coder/$directory_name/$file_name"
+    echo "File '$file_name' created successfully."
+fi

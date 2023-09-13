@@ -1,14 +1,8 @@
-directory_name="my_new_folder"
-file_name="my_new_file.txt"
-if [ ! -d "/home/coder/$directory_name" ]; then
-    echo "Directory already exists."
-else
-    mkdir "/home/coder/$directory_name"
-    echo "Directory '$directory_name' created successfully."
-fi
-if [ ! -f "/home/coder/$directory_name/$file_name" ]; then 
-    echo "File already exists."
-else
-    touch "/home/coder/$directory_name/$file_name"
-    echo "File '$file_name' created successfully."
+new_directory_name="my_new_folder"
+new_file_name="my_new_file.txt"
+home_directory="/home/coder"
+mkdir "$home_directory/$new_directory_name"
+echo "Directory '$new_directory_name' created successfully."
+touch "$home_directory/$new_directory_name/$new_file_name"
+echo "File '$new_file_name' created successfully."
 fi

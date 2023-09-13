@@ -1,11 +1,1 @@
-home_dir=" /home/coder"
-folder_name="my_folder"
-file_name="my_file.txt"
-
-if [ ! -d "$home_dir/$folder_name" ]; then
-    mkdir "$home_dir/$folder_name"
-    echo "Folder '$folder_name' created in $home_dir"
-else
-    echo "Folder '$folder_name' already exists in $home_dir"
-fi
 

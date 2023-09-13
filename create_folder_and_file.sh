@@ -5,3 +5,6 @@ if [ -d "/home/coder/$directory_name" ]; then
 else
     mkdir "/home/coder/$directory_name"
     echo "Directory '$directory_name' created successfully."
+fi
+if [ -f "/home/coder/$directory_name/$file_name" ]; then 
+    echo "File already"

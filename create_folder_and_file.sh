@@ -6,4 +6,5 @@ mkdir "$home_directory/$new_directory_name"
 echo "Directory '$new_directory_name' created successfully."
 touch "$home_directory/$new_directory_name/$new_file_name"
 echo "File '$new_file_name' created successfully."
+ls "$home_directory/$new_directory_name"
 
